@@ -15,17 +15,33 @@ body {
 }
 .main-header-top-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
 }
-.logo {
-    width: 50%;
+.main-header-top-bar a {
+    width: 45%;
 }
+
 .barra-busqueda {
-    display: inline-block;
-    width: 50%;
+    padding: 5px;
+    width: 40%;
+    margin-left: 5px;
+    background-color: #FFF;
+    border-radius: 10px;
 }
+
+.barra-busqueda input {
+    width: 85%;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.barra-busqueda i {
+    font-size: 15px;
+}
+
 .copy-header {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -57,11 +73,16 @@ body {
 }
 .main-navbar a {
     text-decoration: none;
-    color: #222222;
+    color: #414040;
     display: inline-block;
     padding: 5px 0;
     font-size: 17px;
+    transition: color 250ms;
 }
+.main-navbar a:hover {
+    color: black;
+}
+
 
 /* Banner */
 .banner {
@@ -69,6 +90,12 @@ body {
 }
     
 /* Main */
+main {
+    margin: -5px 0 10px 0;
+    padding: 10px 0;
+    background-color: #f2e3e3;
+}
+
 .titulares {
     margin-top: 5%;
     margin-left: 5%;
@@ -76,11 +103,16 @@ body {
 }
 
 .secciones-articulos article {
+    padding: 5px 0;
     margin: 5%;
-    background-color: #f2e3e3;
-    border: solid 1px #ebebeb;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px #ebebeb, -0.5px 0.5px 0.5px #ebebeb;
+    transition: box-shadow 250ms;
     border-radius: 5px;
+}
+.secciones-articulos article:hover {
+    box-shadow: 5px 5px 5px #a4a3a3, -2.5px 2.5px 2.5px #a4a3a3;
 }
 
 .secciones-articulos article img {
@@ -125,6 +157,10 @@ body {
     
 
 /* Footer */
+.main-footer {
+    margin-top: 50px;
+}
+
 .main-footer section {
     text-align: center;
     margin: 0px 35px 5px 35px;
@@ -141,18 +177,17 @@ body {
 
 .main-footer p {
     color: #666;
-    font-size: 11px;
+    font-size: 20px;
 }
 
 .copyrigth {
     margin: 5px 10px;
-    font-size: 11px;
     margin-left: 10px;
     color: #ebebeb;
 }
 
 .main-footer i {
-    font-size: 30px;
+    font-size: 50px;
     color: #1259c3;
 }
 
@@ -206,6 +241,8 @@ body {
         margin: auto;
     }
 
+
+
     .secciones-articulos article {
         max-width: 23%;
         margin: 5% 0% 5% 0%;
@@ -238,5 +275,3 @@ body {
         display: flex;
     }
 }
-
-
