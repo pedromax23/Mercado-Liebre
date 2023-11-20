@@ -1,7 +1,8 @@
 .form-login {
+    margin: auto;
+    max-width: 70%;
     padding-top: 20px;
-    background-color: #ebebeb;
-    margin-bottom: 10%;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -20,16 +21,14 @@
 .form-login button {
     border: none;
     padding: 5px;
-    background-color: rgb(57, 57, 187);
+    background-color: #3483fa;
     width: 70%;
     margin-bottom: 20px;
     border-radius: 8px;
     font-size: 20px;
 }
-
 @media (min-width: 768px) {
-    .form-login input,
-    .form-login button {
-        max-width: 500px;
+    .form-login{
+        max-width: 60%;
     }
 }

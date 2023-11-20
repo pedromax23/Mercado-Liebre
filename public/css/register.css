@@ -1,17 +1,9 @@
-.label-perfil,
-.label-fecha {
-    display: block;
-}
-
 .formulario-register {
-    padding: 25px 0;
-    font-size: 20px;
-    text-align: center;
-    background-color: #ebebeb;
-}
-
-.formulario-register div {
+    margin: auto;
+    max-width: 50%;
+    padding-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .confirmar-contraseña input,
@@ -20,10 +12,24 @@
 .email input,
 .usuario input,
 .nombreApellido input {
-    width: 90%;
     border: none;
     padding: 5px;
+    width: 100%;
+    font-size: 20px;
     border-radius: 8px;
+}
+
+.formulario-register div {
+    margin-bottom: 20px;
+}
+
+.foto-usuario input {
+    font-size: 15px;
+}
+
+.confirmar-contraseña label,
+.contraseña label {
+    display: block;
 }
 
 .intereses + h3 {
@@ -39,9 +45,20 @@
 .formulario-register button {
     border: none;
     padding: 5px;
-    background-color: rgb(57, 57, 187);
+    background-color: #3483fa;
     width: 70%;
     margin-bottom: 20px;
     border-radius: 8px;
     font-size: 20px;
+}
+
+@media (min-width: 768px) {
+.confirmar-contraseña input,
+.contraseña input,
+.domicilio input,
+.email input,
+.usuario input,
+.nombreApellido input {
+    max-width: 70%;
+}
 }
