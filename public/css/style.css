@@ -1,3 +1,4 @@
+/* Reset de caja */
 * {
     box-sizing: border-box;
 }
@@ -7,20 +8,20 @@ body {
     font-size: 12px;
 }
 
-
+.logo {
+    width: 200px;
+}
 /* Header */
 .main-header {
     background-color: #EAC926;
     padding: 20px;
 }
+
 .main-header-top-bar {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-}
-.main-header-top-bar a {
-    width: 45%;
 }
 
 .barra-busqueda {
@@ -43,8 +44,7 @@ body {
 }
 
 .copy-header {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% 0;
     font-weight: 400;
     text-align: center;
 }
@@ -66,11 +66,13 @@ body {
 .main-navbar {
     display: none;
 }
+
 .main-navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .main-navbar a {
     text-decoration: none;
     color: #414040;
@@ -79,16 +81,16 @@ body {
     font-size: 17px;
     transition: color 250ms;
 }
+
 .main-navbar a:hover {
     color: black;
 }
-
 
 /* Banner */
 .banner {
     width: 100%;
 }
-    
+
 /* Main */
 main {
     margin: -5px 0 10px 0;
@@ -97,8 +99,7 @@ main {
 }
 
 .titulares {
-    margin-top: 5%;
-    margin-left: 5%;
+    margin: 5% 5% 0 5%;
     font-size: 24px;
 }
 
@@ -111,6 +112,7 @@ main {
     transition: box-shadow 250ms;
     border-radius: 5px;
 }
+
 .secciones-articulos article:hover {
     box-shadow: 5px 5px 5px #a4a3a3, -2.5px 2.5px 2.5px #a4a3a3;
 }
@@ -154,8 +156,6 @@ main {
     margin-left: 5%;
 }
 
-    
-
 /* Footer */
 .main-footer {
     margin-top: 50px;
@@ -163,7 +163,7 @@ main {
 
 .main-footer section {
     text-align: center;
-    margin: 0px 35px 5px 35px;
+    margin: 0 35px 5px 35px;
 }
 
 .copyrigth {
@@ -181,8 +181,7 @@ main {
 }
 
 .copyrigth {
-    margin: 5px 10px;
-    margin-left: 10px;
+    margin: 5px 10px 0 10px;
     color: #ebebeb;
 }
 
@@ -191,6 +190,7 @@ main {
     color: #1259c3;
 }
 
+/* Media Queries */
 @media (min-width: 768px) {
     .secciones-articulos {
         display: flex;
@@ -199,7 +199,7 @@ main {
     }
 
     .secciones-articulos article {
-        margin: 5% 0% 5% 0%;
+        margin: 5% 0;
         max-width: 45%;
     }
 
@@ -207,25 +207,30 @@ main {
         margin-left: 3%;
     }
 
-    .main-header-top-bar {
+    .main-header-top-bar,
+    .copy-header {
         display: flex;
         justify-content: space-around;
     }
+
     .copy-header {
         max-width: 350px;
         text-align: right;
     }
+
     .hamburguer-button {
         display: none;
     }
+
     .main-navbar {
-        
         display: flex;
         justify-content: space-between;
     }
+
     .main-navbar ul {
         display: flex;
     }
+
     .main-navbar li {
         margin: 0 5px;
     }
@@ -235,17 +240,16 @@ main {
     .logo {
         width: 250px;
     }
+
     .main-navbar,
     .main-header-top-bar {
         max-width: 1200px;
         margin: auto;
     }
 
-
-
     .secciones-articulos article {
         max-width: 23%;
-        margin: 5% 0% 5% 0%;
+        margin: 5% 0;
     }
 
     .titulares {
@@ -255,18 +259,22 @@ main {
     .main-header-top-bar {
         align-items: center;
     }
+
     .copy-header {
         max-width: none;
         font-size: 18px;
         font-weight: 400;
         margin: 0;
     }
+
     .main-navbar {
         margin-top: 40px;
     }
+
     .main-navbar li {
         margin: 0 10px;
     }
+
     .main-navbar a {
         font-size: 19px;
     }
