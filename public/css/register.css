@@ -19,11 +19,38 @@
     border-radius: 8px;
 }
 
+.titulo-nacimiento {
+    font-size: 25px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.fechaNacimiento {
+    font-size: 15px;
+}
+
+.label-perfil {
+    font-size: 25px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.perfil-usuario {
+    font-size: 15px;
+}
+
 .formulario-register div {
     margin-bottom: 20px;
 }
 
+.titulo-foto {
+    font-size: 25px;
+    display: block;
+    margin-bottom: 10px;
+}
+
 .foto-usuario input {
+    display: block;
     font-size: 15px;
 }
 
@@ -32,12 +59,17 @@
     display: block;
 }
 
-.intereses + h3 {
-    text-align: left;
+.intereses {
+    margin: auto;
 }
-    
-.intereses label {
 
+.titulo-intereses {
+    font-size: 25px;
+    display: block;
+}
+
+.intereses label {
+    font-size: 20px;
     margin-bottom: 5px;
     display: block;
 }
@@ -45,11 +77,18 @@
 .formulario-register button {
     border: none;
     padding: 5px;
-    background-color: #3483fa;
+    background-color: rgb(178, 175, 175);
     width: 70%;
     margin-bottom: 20px;
     border-radius: 8px;
     font-size: 20px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.formulario-register button:hover {
+    background-color: #0022AA;
+    color: #FFF;
 }
 
 @media (min-width: 768px) {

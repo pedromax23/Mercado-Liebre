@@ -14,7 +14,7 @@ body {
 /* Header */
 .main-header {
     background-color: #EAC926;
-    padding: 20px;
+    padding: 10px;
 }
 
 .main-header-top-bar {
@@ -88,12 +88,15 @@ body {
 
 /* Banner */
 .banner {
-    width: 100%;
+    display: none;
+    width: 90vw;
+    margin: auto;
 }
 
 /* Main */
 main {
-    margin: -5px 0 10px 0;
+    margin: auto;
+    width: 90vw;
     padding: 10px 0;
     background-color: #ebebeb;
 }
@@ -122,6 +125,8 @@ main {
 }
 
 .detalle-producto {
+    padding-top: 10px;
+    position: relative;
     border-top: solid 1px #f2e3e3;
 }
 
@@ -144,6 +149,9 @@ main {
 }
 
 #icono-camion {
+    position: absolute;
+    right: 5%;
+    top: -15px;
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -162,6 +170,8 @@ main {
 }
 
 .main-footer section {
+    border-right: solid 1px black;
+    border-left: solid 1px black;
     text-align: center;
     margin: 0 35px 5px 35px;
 }
@@ -192,6 +202,14 @@ main {
 
 /* Media Queries */
 @media (min-width: 768px) {
+    .banner {
+        display: block;
+    }
+    
+    /* Main */
+    main {
+        margin-top: -5px;
+    }
     .secciones-articulos {
         display: flex;
         flex-wrap: wrap;
