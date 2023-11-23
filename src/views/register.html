@@ -50,30 +50,31 @@
             </nav>
 
         </header>
-        
-        <!-- Banner -->
-        <section>
-            <img class="banner" src="img/img-home-banner.jpg" alt="">  
-        </section>
 
         <main>
             <form action="/register" method="post" class="formulario-register">
+
                 <div class="nombreApellido">
                     <input placeholder="Nombre y apellido" type="text" name="nombreApellido" id="nombre">
                 </div>
+
                 <div class="usuario">
                     <input placeholder="Nombre de usuario" type="text" name="nombreUsuario" id="usuario">
                 </div>
+
                 <div class="email">
                     <input placeholder="E-mail" type="email" name="email" id="email">
                 </div>
+
                 <div class="fechaNacimiento">
                     <label class="titulo-nacimiento">Fecha de nacimiento</label>
                     <input type="date" id="fecha">
                 </div>
+
                 <div class="domicilio">
                     <input placeholder="Domicilio" type="text" name="domicilio" id="domicilio">
                 </div>
+
                 <div class="perfil-usuario">
                     <label class="label-perfil">Perfil de usuario</label>
                     <label for="comprador">
@@ -83,6 +84,7 @@
                         <input name="opcion" id="vendedor" type="radio">Vendedor
                     </label>
                 </div>
+
                 <div class="intereses">
                     <label class="titulo-intereses">Intereses</label>
                     <label for="electro">
@@ -101,21 +103,25 @@
                         <input type="checkbox" id="vidaSana"> Vida sana
                     </label>
                 </div>
+
                 <div class="foto-usuario">
                     <label class="titulo-foto">Foto de usuario</label>
                     <input type="file" name="fotoUsuario" accept=".jpg, .png">
                 </div>
+
                 <div class="contraseña">
-                    <label for="contraseña">Contraseña</label>
-                    <input type="password" name="contraseña" id="contraseña">
+                    <input placeholder="Contraseña" type="password" name="contraseña" id="contraseña">
                 </div>
+                
                 <div class="confirmar-contraseña">
-                    <label for="confirmarContraseña">Confirmar contraseña</label>
-                    <input type="password" name="confirmarContraseña" id="confirmarContraseña">
+                    <input placeholder="Confirmar contraseña" type="password" name="confirmarContraseña" id="confirmarContraseña">
                 </div>
         
-                <button type="submit">Registrar</button>
-                <button type="reset">Borrar</button>
+                <div>
+                    <button type="submit">Registrar</button>
+                    <button type="reset">Borrar</button>
+                </div>
+                
             </form>
         </main>
 

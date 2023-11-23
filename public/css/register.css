@@ -1,86 +1,91 @@
+main {
+    margin-top: 0;
+}
+
 .formulario-register {
+    display: flex;
+    flex-direction: column;
     margin: auto;
-    max-width: 50%;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.confirmar-contraseña input,
-.contraseña input,
-.domicilio input,
-.email input,
-.usuario input,
-.nombreApellido input {
-    border: none;
-    padding: 5px;
-    width: 100%;
-    font-size: 20px;
-    border-radius: 8px;
-}
-
-.titulo-nacimiento {
-    font-size: 25px;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.fechaNacimiento {
-    font-size: 15px;
-}
-
-.label-perfil {
-    font-size: 25px;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.perfil-usuario {
-    font-size: 15px;
+    max-width: 90%;
+    align-items: center;
 }
 
 .formulario-register div {
-    margin-bottom: 20px;
-}
-
-.titulo-foto {
-    font-size: 25px;
-    display: block;
     margin-bottom: 10px;
-}
-
-.foto-usuario input {
-    display: block;
+    width: 100%;
+    text-align: center;
     font-size: 15px;
 }
 
-.confirmar-contraseña label,
-.contraseña label {
-    display: block;
+.nombreApellido input,
+.usuario input,
+.email input,
+.fechaNacimiento input,
+.domicilio input,
+.contraseña input,
+.confirmar-contraseña input {
+    width: 80%;
+    text-align: center;
+    border: solid 1px #c4c0c0;
+    border-radius: 5px;
+    font-size: 20px;
 }
 
-.intereses {
+.fechaNacimiento {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-nacimiento {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.fechaNacimiento input {
     margin: auto;
 }
 
-.titulo-intereses {
-    font-size: 25px;
-    display: block;
+.perfil-usuario {
+    display: flex;
+    flex-direction: column;
 }
 
-.intereses label {
+.label-perfil {
     font-size: 20px;
     margin-bottom: 5px;
-    display: block;
+}
+
+.intereses {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-intereses {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.foto-usuario {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-foto {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.foto-usuario input {
+    margin: auto;
 }
 
 .formulario-register button {
+    width: 80%;
+    margin-bottom: 5px;
     border: none;
     padding: 5px;
     background-color: rgb(178, 175, 175);
-    width: 70%;
-    margin-bottom: 20px;
-    border-radius: 8px;
+    border-radius: 5px;
     font-size: 20px;
     transition-property: all;
     transition-duration: 0.5s;
@@ -92,12 +97,7 @@
 }
 
 @media (min-width: 768px) {
-.confirmar-contraseña input,
-.contraseña input,
-.domicilio input,
-.email input,
-.usuario input,
-.nombreApellido input {
-    max-width: 70%;
-}
+    .formulario-register div {
+        max-width: 600px;
+    }
 }

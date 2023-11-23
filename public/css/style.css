@@ -130,6 +130,16 @@ main {
     border-top: solid 1px #f2e3e3;
 }
 
+.detalle-producto h4 {
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.secciones-articulos article:hover .detalle-producto h4 {
+    opacity: 100;
+}
+
 .articulo-precio {
     margin-left: 5%;
     font-size: 18px;
@@ -162,6 +172,12 @@ main {
     background-color: #FFF;
     border-radius: 50%;
     margin-left: 5%;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.secciones-articulos article:hover #icono-camion {
+    transform: rotate(280deg);
 }
 
 /* Footer */
@@ -198,6 +214,11 @@ main {
 .main-footer i {
     font-size: 50px;
     color: #1259c3;
+    transition: all 0.5s;
+}
+
+.main-footer i:hover {
+    color: #eac926;
 }
 
 /* Media Queries */
